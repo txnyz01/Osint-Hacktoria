@@ -42,7 +42,7 @@ Names as per Google Maps and English, using lowercase letters and hyphens only.
 |Password Example | dominican-republic-la-romana-minerva-miabal |
 
 ## Walktrough
-### $\color{cyan}{Mission 1}$
+### $\color{cyan}{Mission\ 1}$
 
 Files in the ZIP:
 * CHECKSUMS
@@ -58,7 +58,7 @@ After reading the instructions, out first task is to verify the CHECKSUM of the 
 
 ![Imgur](https://i.imgur.com/dG25iA3.png)
 
-### $\color{cyan}{Cracking Them Open}$
+### $\color{cyan}{Cracking\ Them\ Open}$
 
 Now that the files have been verified lets dig in.
 
@@ -190,4 +190,40 @@ And if we turn it to MD5 Hash we get the link we need. We can do this with the f
 
 ```bash
 echo -n swan-view-pulborough | md5sum
+# 0796204fd7c432598f2d55911d97cdf4
 ```
+
+Leading to:
+> bit.ly/0796204fd7c432598f2d55911d97cdf4
+
+### $\color{cyan}{Mission\ 2}$
+
+The new zip file contains the following files:
+* INSTRUCTIONS.txt
+* locale-1.jpeg
+* locale-2.jpeg
+* locale-3.jpeg
+* locale-4.jpeg
+* locale-5.jpeg
+
+### Location-1:
+
+![Imgur](https://i.imgur.com/Nqug2tb.png)
+
+What can we see? Some data points:
+* Electric box
+* Advert, seems new
+* A parking restriction sign
+
+And the position of them is important. So lets reverse image search it.
+
+![Imgur](https://i.imgur.com/rvftpkj.png)
+
+BINGO! The first result looks just like out image, but a different graffiti at the time, lets take a look.
+
+![Imgur](https://i.imgur.com/cOb4VPu.png)
+
+Looks to be it, lets go to Google Maps and find it.
+
+![Imgur](https://i.imgur.com/np2mg7r.png)
+> 29 New Inn Yard, London, England
