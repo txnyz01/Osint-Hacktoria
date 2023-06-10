@@ -157,3 +157,37 @@ With the layout created we can now fill it up by running the following command.
 sudo mysql assets < assets_database.sql
 # And we do this for all of them
 ```
+
+As we can see from the names of the databases, there is ont that sticks out. Thats right its `hermitage` as that is another word for hideout or a "Safe House".
+
+```bash
+sudo mysql
+# Lets pull up the database we have created
+USE hermitage;
+# and lets see what it contains
+SHOW TABLES;
+SELECT * FROM house_locales;
+exit
+```
+It should show like this.
+
+![Imgur](https://i.imgur.com/YAd4iwJ.png)
+
+Those are just random three words! How can we use that to find them? 
+
+Well thank you for asking. Those three random words are probably used on [What3Words](https://what3words.com).
+
+After going trough all of them we finally got the right one, and we got the adress we needed. 
+
+![Imgur](https://i.imgur.com/YAWMCY5.png)
+
+As the instructions specified we need to write down the address in a specivic way. 
+`road-name-village`
+So we end up with:
+> swan-view-pulborough
+
+And if we turn it to MD5 Hash we get the link we need. We can do this with the following command.
+
+```bash
+echo -n swan-view-pulborough | md5sum
+```
