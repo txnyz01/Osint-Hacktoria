@@ -33,4 +33,28 @@ As always, Special Agent K. The Contract is yours, if you choose to accept.
 
 [Download the MATERIAL](https://hacktoria.com/wp-content/contracts/items/2023/human-traffickers/mission-files-01-human-traffickers.zip)
 
+The password for the flagfile is the answer to the final step of the mission, as per the format stated below.
+
+Names as per Google Maps and English, using lowercase letters and hyphens only.
+
+| Password Format | country-name-city-name-street-name |
+|---|---|
+|Password Example | dominican-republic-la-romana-minerva-miabal |
+
 ## Walktrough
+*Mission File 1*
+
+Files in the ZIP:
+* CHECKSUMS
+* INSTRUCTIONS.txt
+* message.gpg (password protected)
+* database_backup.zip
+
+After reading the instructions, out first task is to verify the CHECKSUM of the files presented and then geolocate the "safe house" location.
+
+*CHECKSUM:*
+
+![given](https://imgur.com/7VB2icb)
+
+![checking](https://imgur.com/dG25iA3)
+
