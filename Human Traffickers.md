@@ -227,3 +227,28 @@ Looks to be it, lets go to Google Maps and find it.
 
 ![maps](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045521929.png?raw=true)
 > 29 New Inn Yard, London, England
+
+### Location-2:
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/bd4800a0-4380-492e-bf9a-3f719358f716)
+
+What do we see:
+* There is a T-junction
+* Road name: `Puesta Del Sol Drive`
+* Traffic light
+* Its deserty
+* The buildings look american. So chances are its in America.
+
+Well lets type the road in Google maps and see what we can find.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/93eb53b4-c451-45a5-a46e-f1b705b4c89b)
+
+Looking trough all of them with terrain view, the only promising one was in `Victorville, CA` as it matched the deserty type terrain.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/9fe8aa2c-22a3-4475-b858-b990e03aff48)
+
+Lets check out these three junctions. We are looking for a sign, trafficlight around those points of interest.
+
+![Screenshot from 2023-06-10 01-40-04](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/2a1b8dd4-cb53-4953-a71a-ceaa29a6b5a7)
+> 16062 Village Dr, Victorville, California
+
