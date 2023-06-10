@@ -316,12 +316,13 @@ Now as per the instructions, we need to combine the first 4 letters of each stre
 > newivillparkhornbeac
 
 Turning it into MD5 Hash, we get our link.
+> 5f44dd447ef33db456abf0ff9a3931f4
 > bit.ly/5f44dd447ef33db456abf0ff9a3931f4
 
 ### $\color{cyan}{Mission\ 3}$
 
 Files:
-  * CHECKSUMS
+  * CHECKSUM
   * INSTRUCTIONS.txt
   * Password_Vault.kdbx.7z (password protected)
 
@@ -330,4 +331,45 @@ Files:
 ```bash
 sudo apt install keepassxc
 ```
+
+Confirming the CHECKSUM to make sure the file is fine, now we need to bruteforce the password, like we did with the previouse files.
+
+```bash
+# First we hash it
+./john/run/keepass2john Password_Vault.kdbx > keepass.hash
+# Now we brute force it
+./john/run/john --wordlist=rockyou.txt keepass.hash
+```
+
+And we get the password `shadow1`. Lets login with our newly aquired password and dig deeper.
+
+![Screenshot from 2023-06-10 02-55-44](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/ff609308-346b-432d-950e-5dbe69e80888)
+
+There seem to be a lot of social media accounts, lets take a look at all of them.
+
+The only one that seemed to be still active is twitter, and there is quite a bit of information.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/d84d6a05-6cea-436d-8eb0-7c4a62bb4d69)
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/f0723f6d-1498-4ab9-9c72-afe864c6695c)
+
+Lets see what we got.
+ * It is in `South Africa`
+ * By the beach
+ * There is a sign with a `circular logo` and we can make out `table 210`
+
+Lets google `table 210 in south africa`.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/424d3a04-644b-4ff6-b632-4e0aecd7d751)
+
+Would you look at that. `Alex/Kenton 210` in `Kenton-on-Sea`.
+
+![Screenshot from 2023-06-10 03-04-25](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/292ebd23-da27-4304-908d-8be497637e87)
+> Round Table Alex/Kenton 210 Club
+
+As per the instructions, we need to format our findings and hash them, to get our next mission.
+> south-africa-kenton-on-sea
+> e959dd95e27b6cf16fef9573be43a22d
+> bit.ly/e959dd95e27b6cf16fef9573be43a22d
+
 
