@@ -54,7 +54,7 @@ After reading the instructions, out first task is to verify the CHECKSUM of the 
 
 *CHECKSUM:*
 
-![given](https://imgur.com/7VB2icb)
+![given](https://i.imgur.com/7VB2icb.png)
 
-![checking](https://imgur.com/dG25iA3)
+![checking](https://i.imgur.com/dG25iA3.png)
 
