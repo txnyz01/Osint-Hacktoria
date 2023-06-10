@@ -221,7 +221,7 @@ And the position of them is important. So lets reverse image search it.
 
 BINGO! The first result looks just like out image, but a different graffiti at the time, lets take a look.
 
-![Imgur](https://i.imgur.com/cOb4VPu.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045630293.png?raw=true)
 
 Looks to be it, lets go to Google Maps and find it.
 
