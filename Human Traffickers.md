@@ -171,7 +171,7 @@ exit
 ```
 It should show like this.
 
-![Imgur](https://i.imgur.com/YAd4iwJ.png)
+![image](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045818668.png?raw=true)
 
 Those are just random three words! How can we use that to find them? 
 
@@ -179,7 +179,7 @@ Well thank you for asking. Those three random words are probably used on [What3W
 
 After going trough all of them we finally got the right one, and we got the adress we needed. 
 
-![Imgur](https://i.imgur.com/YAWMCY5.png)
+![image](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045825705.png?raw=true)
 
 As the instructions specified we need to write down the address in a specivic way. 
 `road-name-village`
@@ -208,7 +208,7 @@ The new zip file contains the following files:
 
 ### Location-1:
 
-![Imgur](https://i.imgur.com/Nqug2tb.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045842689.png?raw=true)
 
 What can we see? Some data points:
 * Electric box
@@ -217,7 +217,7 @@ What can we see? Some data points:
 
 And the position of them is important. So lets reverse image search it.
 
-![Imgur](https://i.imgur.com/rvftpkj.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045850128.png?raw=true)
 
 BINGO! The first result looks just like out image, but a different graffiti at the time, lets take a look.
 
