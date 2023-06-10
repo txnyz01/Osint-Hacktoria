@@ -42,7 +42,7 @@ Names as per Google Maps and English, using lowercase letters and hyphens only.
 |Password Example | dominican-republic-la-romana-minerva-miabal |
 
 ## Walktrough
-*Mission File 1*
+### Mission File 1
 
 Files in the ZIP:
 * CHECKSUMS
@@ -57,4 +57,11 @@ After reading the instructions, out first task is to verify the CHECKSUM of the 
 ![given](https://i.imgur.com/7VB2icb.png)
 
 ![checking](https://i.imgur.com/dG25iA3.png)
+### Investigation 1
+Now that the files have been verified lets dig in.
 
+Well.. Not so fast, we dont have the passwords and we cant access them. So lets use the handy tool called [John The Ripper](https://github.com/openwall/john)
+
+We can install it by pulling it from the github above, I had some problems running it but I figured it out.
+
+Here is the way to install it:
