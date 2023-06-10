@@ -54,9 +54,9 @@ After reading the instructions, out first task is to verify the CHECKSUM of the 
 
 ### $\color{cyan}{Files}$
 
-![Imgur](https://i.imgur.com/7VB2icb.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045722413.png?raw=true)
 
-![Imgur](https://i.imgur.com/dG25iA3.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045729519.png?raw=true)
 
 ### $\color{cyan}{Cracking\ Them\ Open}$
 
@@ -92,7 +92,7 @@ Now we can bruteforce the hash with out trusty password list I found on github. 
 ./john/run/john --wordlist=rockyou.txt gpg.hash
 ```
 
-![Imgur](https://i.imgur.com/uDJ8RCA.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045738460.png?raw=true)
 
 After a few minutes we have the password. `nopassword`
 
@@ -104,7 +104,7 @@ We now have one password of two. Lets get the second one the same way.
 ```
 And after a few minutes we have our second password. `995511335577_y`
 
-![Imgur](https://i.imgur.com/qUZVYWn.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045746514.png?raw=true)
 
 ### $\color{cyan}{Exploration}$
 
@@ -116,13 +116,13 @@ Oprning the message first with the following command.
 gpg -d message.gpg > message.txt
 ```
 
-![Imgur](https://i.imgur.com/GWdcbk4.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045755337.png?raw=true)
 
 Reading trough the decripted file we can gather a bit of information. Joso seems to be sending a picture to Seniha, and that picture is the one we need. But it is all text? Not really an image is it? 
 
 Don't worry! Thats easy! We can just use [base64.guru](https://base64.guru/converter/decode/image/png) and convert it back to a png file we can download.
 
-![Imgur](https://i.imgur.com/axNPImN.png)
+![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045808541.png?raw=true)
 
 But sadly the image doesn't really tell us much. By the building layout and structure we can assume it is somewhere in the United Kingdom. 
 
