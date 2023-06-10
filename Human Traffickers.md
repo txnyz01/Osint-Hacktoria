@@ -45,10 +45,10 @@ Names as per Google Maps and English, using lowercase letters and hyphens only.
 ### $\color{cyan}{Mission\ 1}$
 
 Files in the ZIP:
-* CHECKSUMS
-* INSTRUCTIONS.txt
-* message.gpg (password protected)
-* database_backup.zip
+  * CHECKSUMS
+  * INSTRUCTIONS.txt
+  * message.gpg (password protected)
+  * database_backup.zip
 
 After reading the instructions, out first task is to verify the CHECKSUM of the files presented and then geolocate the "safe house" location.
 
@@ -199,21 +199,21 @@ Leading to:
 ### $\color{cyan}{Mission\ 2}$
 
 The new zip file contains the following files:
-* INSTRUCTIONS.txt
-* locale-1.jpeg
-* locale-2.jpeg
-* locale-3.jpeg
-* locale-4.jpeg
-* locale-5.jpeg
+  * INSTRUCTIONS.txt
+  * locale-1.jpeg
+  * locale-2.jpeg
+  * locale-3.jpeg
+  * locale-4.jpeg
+  * locale-5.jpeg
 
 ### Location-1:
 
 ![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045842689.png?raw=true)
 
 What can we see? Some data points:
-* Electric box
-* Advert, seems new
-* A parking restriction sign
+  * Electric box
+  * Advert, seems new
+  * A parking restriction sign
 
 And the position of them is important. So lets reverse image search it.
 
@@ -233,11 +233,11 @@ Looks to be it, lets go to Google Maps and find it.
 ![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/bd4800a0-4380-492e-bf9a-3f719358f716)
 
 What do we see:
-* There is a T-junction
-* Road name: `Puesta Del Sol Drive`
-* Traffic light
-* Its deserty
-* The buildings look american. So chances are its in America.
+  * There is a T-junction
+  * Road name: `Puesta Del Sol Drive`
+  * Traffic light
+  * Its deserty
+  * The buildings look american. So chances are its in America.
 
 Well lets type the road in Google maps and see what we can find.
 
@@ -251,4 +251,83 @@ Lets check out these three junctions. We are looking for a sign, trafficlight ar
 
 ![Screenshot from 2023-06-10 01-40-04](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/2a1b8dd4-cb53-4953-a71a-ceaa29a6b5a7)
 > 16062 Village Dr, Victorville, California
+
+### Location-3:
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/006d036e-c914-48e2-8a77-442b721a2a83)
+
+What do we see:
+  * Two roadsigns `Woburn Way` & `Parkfield Road`
+  * We are mostlikely in Australia as there is a flag, not always but chances are high.
+  * And we are on `Parkfield Road` as one of the signs is pointing towards `Woburn Way`
+
+Lets take a look at Google Maps. It was the first result.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/fc76dc94-09e4-45c7-9a5b-aed0adc8ac83)
+
+Two points of interest.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/41f079dc-bad4-46be-8539-87ddb54e89ca)
+
+![Screenshot from 2023-06-10 01-50-43](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/23d7d36a-bc9d-4cda-af90-4b5da2d86d64)
+> 30 Parkfield Rd, Kelmscott, Australia
+
+### Location-4:
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/8b154bfe-1a61-4fae-bd6c-793061aba51d)
+
+What do we see:
+  * A realtor sign with the name `Lee Ivans` & phone number `250-575-5455`
+  * End of the road
+
+We can Google the phone to see where abouts it is.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/41fec2d1-1a89-4b12-af7c-b69942f36820)
+
+So it is in `Kelowna, Canada`.
+
+I looked trough their facebook and website and I could not find the neighbouring house at all. So the only option left is to go trough all hilly areas and look at the ends of the roads.
+
+![Screenshot from 2023-06-10 02-17-47](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/0c61e3e9-b0c6-4ce4-8b34-99a259abfe2c)
+> 601 Horn Cres, Kelowna, Canada
+
+### Location-5:
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/4fe2beb2-9639-42fd-8e19-5584ddacb3f6)
+
+What do we see:
+  * Road name starting with Bea
+  * Van with `Pro Roofing` written on it
+  * Left hand driving
+  * Square stop sign
+
+So we are looking for a english speaking, left hand driving country who's road stop signs are in a square font.
+
+Could be, Australia, New Zealand, Singapore or the UK. By Googling each country's road stop sings, we can find out it is actually New Zealand. So lets check out `pro roofing new zealand` in Google.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/2e7f5195-01b6-4410-b6df-7607b350a0e0)
+
+So we are looking for a road starting with `Bea` in `Aukland, New Zealand`.
+
+![Screenshot from 2023-06-10 02-31-27](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/d91d825d-c9b0-4aa4-806c-b849025091d6)
+> 39 Beaconsfield St, Auckland, New Zealand
+
+Now as per the instructions, we need to combine the first 4 letters of each streetname, to get our code.
+> newivillparkhornbeac
+
+Turning it into MD5 Hash, we get our link.
+> bit.ly/5f44dd447ef33db456abf0ff9a3931f4
+
+### $\color{cyan}{Mission\ 3}$
+
+Files:
+  * CHECKSUMS
+  * INSTRUCTIONS.txt
+  * Password_Vault.kdbx.7z (password protected)
+
+`kdbx` is a keepass file, so we need to install that to be able to continue. We can do that with the following command.
+
+```bash
+sudo apt install keepassxc
+```
 
