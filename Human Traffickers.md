@@ -42,7 +42,7 @@ Names as per Google Maps and English, using lowercase letters and hyphens only.
 |Password Example | dominican-republic-la-romana-minerva-miabal |
 
 ## Walktrough
-### Mission File 1
+### $\color{cyan}{Mission 1}$
 
 Files in the ZIP:
 * CHECKSUMS
@@ -52,12 +52,14 @@ Files in the ZIP:
 
 After reading the instructions, out first task is to verify the CHECKSUM of the files presented and then geolocate the "safe house" location.
 
-*CHECKSUM:*
+### $\color{cyan}{Files}$
 
 ![given](https://i.imgur.com/7VB2icb.png)
 
 ![checking](https://i.imgur.com/dG25iA3.png)
-### Investigation 1
+
+### $\color{cyan}{Cracking Them Open}$
+
 Now that the files have been verified lets dig in.
 
 Well.. Not so fast, we dont have the passwords and we cant access them. So lets use the handy tool called [John The Ripper](https://github.com/openwall/john)
@@ -94,11 +96,26 @@ Now we can bruteforce the hash with out trusty password list I found on github. 
 
 After a few minutes we have the password. `nopassword`
 
-Lets see that the message says by opening it with the following command.
+We now have one password of two. Lets get the second one the same way.
+
+```
+./john/run/gpg2john database_backup.zip > zip.hash
+./john/run/john --wordlist=rockyou.txt zip.hash
+```
+And after a few minutes we have our second password. `995511335577_y`
+
+![password2](https://i.imgur.com/qUZVYWn.png)
+
+### $\color{cyan}{Exploration}$
+
+Equiped with all the password we need so far lets explore the files.
+
+Oprning the message first with the following command.
 
 ```
 gpg -d message.gpg > message.txt
 ```
+
 ![message](https://i.imgur.com/GWdcbk4.png)
 
 Reading trough the decripted file we can gather a bit of information. Joso seems to be sending a picture to Seniha, and that picture is the one we need. But it is all text? Not really an image is it? 
@@ -107,3 +124,36 @@ Don't worry! Thats easy! We can just use [base64.guru](https://base64.guru/conve
 
 ![base64img](https://i.imgur.com/axNPImN.png)
 
+But sadly the image doesn't really tell us much. By the building layout and structure we can assume it is somewhere in the United Kingdom. 
+
+Lets see what is inside the database. Lets set up all the things we need to explore it.
+
+```
+sudo apt install mysql-client mysql-service
+sudo service mysql start
+sudo mysql
+```
+
+We first create a blank sql table.
+
+```
+USE mysql;
+
+CREATE DATABASE assets;
+CREATE DATABASE backout;
+CREATE DATABASE cells;
+CREATE DATABASE hermitage;
+CREATE DATABASE insiders;
+CREATE DATABASE transport;
+CREATE DATABASE routes;
+
+SHOW DATABASES;
+exit
+```
+
+With the layout created we can now fill it up by running the following command.
+
+```
+sudo mysql assets < assets_database.sql
+# And we do this for all of them
+```
