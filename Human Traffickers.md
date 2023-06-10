@@ -65,3 +65,31 @@ Well.. Not so fast, we dont have the passwords and we cant access them. So lets 
 We can install it by pulling it from the github above, I had some problems running it but I figured it out.
 
 Here is the way to install it:
+
+'''
+git clone "https://github.com/magnumripper/JohnTheRipper.git"
+cd JohnTheRipper/src 
+./configure 
+cd .. && cd run
+sudo make
+cd .. && cd src
+sudo make -s clean && sudo make -sj4 
+'''
+
+After this it should work fine, at least it worked for me. Now back to the mission.
+
+Lets begin with message.gpg, first we will need to generate a 'hash', we do this by running the command bellow.
+
+'''
+./john/run/gpg2john message.gpg > gpg.hash
+'''
+
+Now we can bruteforce the hash with out trusty password list I found on github. [Link](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj0_peR2bf_AhUUnVwKHRhZAW8QFnoECA4QAQ&url=https%3A%2F%2Fgithub.com%2Fbrannondorsey%2Fnaive-hashcat%2Freleases%2Fdownload%2Fdata%2Frockyou.txt&usg=AOvVaw3snAERl1mU6Ccr4WFEazBd)
+
+'''
+./john/run/john --wordlist=rockyou.txt gpg.hash
+///
+
+![password1](https://i.imgur.com/uDJ8RCA.png)
+
+After a few minutes we have the password. 'nopassword'
