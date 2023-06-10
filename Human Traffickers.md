@@ -316,8 +316,7 @@ Now as per the instructions, we need to combine the first 4 letters of each stre
 > newivillparkhornbeac
 
 Turning it into MD5 Hash, we get our link.
-> 5f44dd447ef33db456abf0ff9a3931f4
-> bit.ly/5f44dd447ef33db456abf0ff9a3931f4
+> 5f44dd447ef33db456abf0ff9a3931f4 | bit.ly/5f44dd447ef33db456abf0ff9a3931f4
 
 ### $\color{cyan}{Mission\ 3}$
 
@@ -368,8 +367,6 @@ Would you look at that. `Alex/Kenton 210` in `Kenton-on-Sea`.
 > Round Table Alex/Kenton 210 Club
 
 As per the instructions, we need to format our findings and hash them, to get our next mission.
-> south-africa-kenton-on-sea
-> e959dd95e27b6cf16fef9573be43a22d
-> bit.ly/e959dd95e27b6cf16fef9573be43a22d
+> south-africa-kenton-on-sea | e959dd95e27b6cf16fef9573be43a22d | bit.ly/e959dd95e27b6cf16fef9573be43a22d
 
 
