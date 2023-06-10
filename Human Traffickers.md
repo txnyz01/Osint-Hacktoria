@@ -93,3 +93,17 @@ Now we can bruteforce the hash with out trusty password list I found on github. 
 ![password1](https://i.imgur.com/uDJ8RCA.png)
 
 After a few minutes we have the password. `nopassword`
+
+Lets see that the message says by opening it with the following command.
+
+```
+gpg -d message.gpg > message.txt
+```
+![message](https://i.imgur.com/GWdcbk4.png)
+
+Reading trough the decripted file we can gather a bit of information. Joso seems to be sending a picture to Seniha, and that picture is the one we need. But it is all text? Not really an image is it? 
+
+Don't worry! Thats easy! We can just use [base64.guru](https://base64.guru/converter/decode/image/png) and convert it back to a png file we can download.
+
+![base64img](https://i.imgur.com/axNPImN.png)
+
