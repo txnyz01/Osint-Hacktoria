@@ -369,4 +369,36 @@ Would you look at that. `Alex/Kenton 210` in `Kenton-on-Sea`.
 As per the instructions, we need to format our findings and hash them, to get our next mission.
 > south-africa-kenton-on-sea | e959dd95e27b6cf16fef9573be43a22d | bit.ly/e959dd95e27b6cf16fef9573be43a22d
 
+### $\color{cyan}{Mission\ 4:\ Finale}$
 
+Files: 
+ * INSTRUCTIONS.txt
+ * captives-location.png
+ * ransome-note.png
+
+Reading trough the note tells us that we need to find the location on the other image. So lets take a look and figure it out.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/4029142d-8db3-4a1a-a3d0-111867fda3c9)
+
+Instantly we see a logo we can find. Lets use Google Lens to find it. Sometime Google Lens doesnt quite pick out what we want it to, like in this case it thought the logo was just text saying `t`. So I made a zoomed in screenshot of the logo and used that.
+
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/b4d481ba-dbe7-4a5a-b2ec-bb14e6704a28)
+
+That it! Lets look at their site and see if we can find store locations.
+
+![Screenshot from 2023-06-10 03-15-03](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/eacbf987-088e-419e-baf3-d22236ad4ef7)
+
+Now the tidious part, checking each location until we find the right one. But we found it.
+
+![Screenshot from 2023-06-10 03-18-28](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/dd22719b-783c-4a09-b045-b670f28956d3)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/d21fc543-94bd-437a-9a7f-9dc8809f575c)
+> Brickfield Rd, Cape Town, South Africa
+
+Formated
+> south-africa-cape-town-brickfield-rd
+
+If we hash it we get the password for the flag. 
+
+![Screenshot from 2023-06-10 03-20-29](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/4c391671-d0ec-4406-b2a0-2e50c6fcc470)
+
+![Screenshot_3](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/ea7f58fd-902b-46bc-b473-10dae9b6bc2a)
