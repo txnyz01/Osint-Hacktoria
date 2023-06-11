@@ -115,13 +115,13 @@ Oprning the message first with the following command.
 gpg -d message.gpg > message.txt
 ```
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045755337.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/e1c6ca89-2580-4351-873c-cae68b47009b)
 
 Reading trough the decripted file we can gather a bit of information. Joso seems to be sending a picture to Seniha, and that picture is the one we need. But it is all text? Not really an image is it? 
 
 Don't worry! Thats easy! We can just use [base64.guru](https://base64.guru/converter/decode/image/png) and convert it back to a png file we can download.
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045808541.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/7a4e7ccd-2e82-4777-8ef1-2b9df630a89a)
 
 But sadly the image doesn't really tell us much. By the building layout and structure we can assume it is somewhere in the United Kingdom. 
 
@@ -170,7 +170,7 @@ exit
 ```
 It should show like this.
 
-![image](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045818668.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/ae5e8e1a-68d8-4442-a4a8-60ad3ffb3f6e)
 
 Those are just random three words! How can we use that to find them? 
 
@@ -178,7 +178,7 @@ Well thank you for asking. Those three random words are probably used on [What3W
 
 After going trough all of them we finally got the right one, and we got the adress we needed. 
 
-![image](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045825705.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/314ba31f-c119-4d85-9a43-496b1e20bd93)
 
 As the instructions specified we need to write down the address in a specivic way. 
 `road-name-village`
@@ -207,7 +207,7 @@ The new zip file contains the following files:
 
 ### Location-1:
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045842689.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/62a37350-675a-4bd1-b409-8eac496e34d8)
 
 What can we see? Some data points:
   * Electric box
@@ -216,15 +216,15 @@ What can we see? Some data points:
 
 And the position of them is important. So lets reverse image search it.
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045850128.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/1bc38b9a-ae90-4b7e-9c30-2c6c496cefb7)
 
 BINGO! The first result looks just like out image, but a different graffiti at the time, lets take a look.
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045630293.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/8d216c1b-5c0a-433b-bd2a-e01f3d34c95b)
 
 Looks to be it, lets go to Google Maps and find it.
 
-![maps](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045521929.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/3470bc09-1627-4788-866d-423ee9df553e)
 > 29 New Inn Yard, London, England
 
 ### Location-2:
