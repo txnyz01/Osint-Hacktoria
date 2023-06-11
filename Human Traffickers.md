@@ -54,9 +54,9 @@ After reading the instructions, out first task is to verify the CHECKSUM of the 
 
 ### $\color{cyan}{Files}$
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045722413.png?raw=true)
+![image](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/a09942e6-8bac-475e-bfbe-597b4fdd9446)
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045729519.png?raw=true)
+![Screenshot from 2023-06-09 21-32-05](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/bb63591f-d63a-499b-8183-ca6d2b449752)
 
 ### $\color{cyan}{Cracking\ Them\ Open}$
 
@@ -91,8 +91,7 @@ Now we can bruteforce the hash with out trusty password list I found on github. 
 ```bash
 ./john/run/john --wordlist=rockyou.txt gpg.hash
 ```
-
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045738460.png?raw=true)
+![Screenshot from 2023-06-09 23-10-09](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/7784ab59-3a23-41d9-b0b1-14b3b0c00924)
 
 After a few minutes we have the password. `nopassword`
 
@@ -104,7 +103,7 @@ We now have one password of two. Lets get the second one the same way.
 ```
 And after a few minutes we have our second password. `995511335577_y`
 
-![Imgur](https://github.com/txnyz01/imges/blob/main/image_2023-06-10_045746514.png?raw=true)
+![Screenshot from 2023-06-09 23-34-46](https://github.com/txnyz01/Osint-Hacktoria/assets/33939134/23e1d739-65f4-4f25-b680-193b03e2cd8f)
 
 ### $\color{cyan}{Exploration}$
 
